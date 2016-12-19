@@ -97,14 +97,16 @@
                 <xs:element name="role-description" minOccurs="0" maxOccurs="unbounded" type="ewp:MultilineStringWithOptionalLang">
                     <xs:annotation>
                         <xs:documentation>
-                            RECOMMENDED. Description of the "roles" of this contact, provided in multiple
+                            Optional description of the "roles" of this contact, provided in multiple
                             languages. It MAY be quite long (multiple paragraphs). It MAY be auto-generated
                             from the computer system, but it also MAY be provided by the contact-person
                             himself/herself.
 
-                            This description should answer the following question: "When this person/office
-                            should be contacted?". Client developers may, for example, display this
-                            information in a tooltip, next to the contact name.
+                            It is RECOMMENDED to provide role-description in contexts where the role of the
+                            contact is not otherwise specified. This description should answer the
+                            following question: "When this person/office should be contacted?". Client
+                            developers may, for example, display this information in a tooltip, next to the
+                            contact name.
 
                             Examples:
                             "Responsible for handling incoming students from Spain."
