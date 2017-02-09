@@ -5,6 +5,15 @@ This document describes all the changes made to the *EWP Abstract Contact Type*
 document, starting from its first beta draft version.
 
 
+0.3.0
+-----
+
+* New optional elements: `<person-given-names>` and `<person-family-name>`.
+
+* Specified how servers should provide contact names in multiple languages or
+  multiple scripts. Examples were updated to reflect that.
+
+
 0.2.0
 -----
 
