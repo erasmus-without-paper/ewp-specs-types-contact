@@ -52,8 +52,42 @@
                         The name of the contact, e.g. "John Doe", or "IRO Office", or "John Doe (Head
                         of the IRO Office)". It is entirely up to the server implementers to decide on
                         how this contact should be labeled. This name MAY refer to a specific person,
-                        but it also may refer to a place, a role, etc. It MUST be descriptive for the
-                        human reader, in its context.
+                        an office, a place, a role, etc. The only requirement is that it MUST be
+                        descriptive for the human reader, in its context.
+
+                        Server implementers are required to specify a value for this element even when
+                        they provide `person-given-names` and `person-family-name`. It might seem
+                        redundant, but in some contexts it is useful - for example, server implementers
+                        are allowed to use `contact-name` to suggest how the name should be displayed -
+                        with proper titles, proper order of middle names, key role etc., while they are
+                        not allowed to do this in `person-given-names` and `person-family-name`.
+
+                        All `*-name` elements MAY be specified in multiple languages (and/or multiple
+                        scripts). It is RECOMMENDED that English (`en`) should come first, other
+                        latin-alphabet entries should follow (e.g. `ru-Latn`), and non-latin alphabets
+                        should come last (e.g. `ru-Cyrl`, `ru`).
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="person-given-names" minOccurs="0" maxOccurs="unbounded" type="ewp:StringWithOptionalLang">
+                <xs:annotation>
+                    <xs:documentation>
+                        If this contact is a person, then this element contains the given names of this
+                        person.
+
+                        It MAY be specified in multiple languages (and/or multiple alphabets). See
+                        annotations on `contact-name` for more information.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="person-family-name" minOccurs="0" maxOccurs="unbounded" type="ewp:StringWithOptionalLang">
+                <xs:annotation>
+                    <xs:documentation>
+                        If this contact is a person, then this element contains the family name of this
+                        person.
+
+                        It MAY be specified in multiple languages (and/or multiple alphabets). See
+                        annotations on `contact-name` for more information.
                     </xs:documentation>
                 </xs:annotation>
             </xs:element>

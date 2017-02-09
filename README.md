@@ -58,7 +58,17 @@ Examples
     xmlns:a="https://github.com/erasmus-without-paper/ewp-specs-types-address/tree/master"
     xmlns:p="https://github.com/erasmus-without-paper/ewp-specs-types-phonenumber/tree/master"
 >
-    <contact-name>John Doe</contact-name>
+    <!-- Servers may provide names in multiple languages and alphabets. -->
+    <contact-name xml:lang="en">Ivan Sidorov (visas and insurance)</contact-name>
+    <contact-name xml:lang="ru-Latn">Ivan Petrovich Sidorov (vizy i strakhovaniye)</contact-name>
+    <contact-name xml:lang="ru-Cyrl">Иван Петрович Сидоров (визы и страхование)</contact-name>
+
+    <!-- This particular contact describes a person. -->
+    <person-given-names xml:lang="ru-Latn">Ivan Petrovich</person-given-names>
+    <person-given-names xml:lang="ru-Cyrl">Иван Петрович</person-given-names>
+    <person-family-name xml:lang="ru-Latn">Sidorov</person-family-name>
+    <person-family-name xml:lang="ru-Cyrl">Сидоров</person-family-name>
+
     <p:phone-number>
         <p:e164>+4723456789</p:e164>
     </p:phone-number>
@@ -69,14 +79,14 @@ Examples
     <p:fax-number>
         <p:other-format>(23) 456789</p:other-format> <!-- discouraged -->
     </p:fax-number>
-    <email>john@uio.no</email>
+    <email>ivan@uio.no</email>
     <a:street-address> <!-- ... --> </a:street-address>
     <a:mailing-address> <!-- ... --> </a:mailing-address>
     <role-description xml:lang="en">
-        John Doe is advising incoming students in regard to visas and insurance.
+        Ivan Sidorov is advising incoming students in regard to visas and insurance.
 
         (This field may also contain other information, which is not present in the
-        model itself, e.g. calling hours.)
+        format itself, e.g. calling hours.)
     </role-description>
 </contact>
 ```
