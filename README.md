@@ -56,7 +56,7 @@ Examples
 <contact
     xmlns="https://github.com/erasmus-without-paper/ewp-specs-types-contact/tree/master"
     xmlns:a="https://github.com/erasmus-without-paper/ewp-specs-types-address/tree/master"
-    xmlns:p="https://github.com/erasmus-without-paper/ewp-specs-types-phonenumber/tree/master"
+    xmlns:p="https://github.com/erasmus-without-paper/ewp-specs-types-phonenumber/tree/stable-v1"
 >
     <!-- Servers may provide names in multiple languages and alphabets. -->
     <contact-name xml:lang="en">Ivan Sidorov (visas and insurance)</contact-name>
