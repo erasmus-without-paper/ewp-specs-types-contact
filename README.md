@@ -55,7 +55,7 @@ Examples
 ```xml
 <contact
     xmlns="https://github.com/erasmus-without-paper/ewp-specs-types-contact/tree/master"
-    xmlns:a="https://github.com/erasmus-without-paper/ewp-specs-types-address/tree/master"
+    xmlns:a="https://github.com/erasmus-without-paper/ewp-specs-types-address/tree/stable-v1"
     xmlns:p="https://github.com/erasmus-without-paper/ewp-specs-types-phonenumber/tree/stable-v1"
 >
     <!-- Servers may provide names in multiple languages and alphabets. -->
