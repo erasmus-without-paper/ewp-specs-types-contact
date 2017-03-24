@@ -29,10 +29,8 @@ format (it can be cached though).
 
 This type builds upon two other EWP data types:
 
-* [Phone Number data type]
-  (https://github.com/erasmus-without-paper/ewp-specs-types-phonenumber)
-* [Address data type]
-  (https://github.com/erasmus-without-paper/ewp-specs-types-address)
+* [Phone Number data type](https://github.com/erasmus-without-paper/ewp-specs-types-phonenumber)
+* [Address data type](https://github.com/erasmus-without-paper/ewp-specs-types-address)
 
 
 The Schema
