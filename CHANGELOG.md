@@ -5,6 +5,20 @@ This document describes all the changes made to the *EWP Abstract Contact Type*
 document, starting from its first beta draft version.
 
 
+1.1.0
+-----
+
+* New element: `<person-gender>`.
+
+* Added a clarification that it is allowed (but NOT RECOMMENDED) for a person
+  to have a family name in certain language/alphabet, but also be missing the
+  given names in this language/alphabet, etc.
+
+* Added a recommendation for the servers that email addresses should be
+  provided, because clients might want to use them to identify the contact
+  (e.g. if they choose to import it into their systems).
+
+
 1.0.0
 -----
 
