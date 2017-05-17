@@ -75,6 +75,11 @@
 
                         It MAY be specified in multiple languages (and/or multiple alphabets). See
                         annotations on `contact-name` for more information.
+
+                        Note, that it is allowed (but NOT RECOMMENDED) for a person to have a family
+                        name in certain language/alphabet, but also be missing the given names in this
+                        language/alphabet. Clients will need to cope with all such possible
+                        combinations.
                     </xs:documentation>
                 </xs:annotation>
             </xs:element>
@@ -86,6 +91,11 @@
 
                         It MAY be specified in multiple languages (and/or multiple alphabets). See
                         annotations on `contact-name` for more information.
+
+                        Note, that it is allowed (but NOT RECOMMENDED) for a person to have a family
+                        name in certain language/alphabet, but also be missing the given names in this
+                        language/alphabet. Clients will need to cope with all such possible
+                        combinations.
                     </xs:documentation>
                 </xs:annotation>
             </xs:element>
