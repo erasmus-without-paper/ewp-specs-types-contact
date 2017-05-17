@@ -117,6 +117,12 @@
                 <xs:annotation>
                     <xs:documentation>
                         A list of email addresses at which this contact can be reached.
+
+                        Servers SHOULD try to supply this list, even if it doesn't seem to be necessary
+                        in the particular context in which you are using the Abstract Contact data
+                        type. Some clients might need to uniquely identify this contact (not only a
+                        person, but also a broader contact entity), and currently email address seems
+                        to be the best (easiest) type of identifier for this.
                     </xs:documentation>
                 </xs:annotation>
             </xs:element>
