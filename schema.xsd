@@ -99,6 +99,14 @@
                     </xs:documentation>
                 </xs:annotation>
             </xs:element>
+            <xs:element name="person-gender" minOccurs="0" maxOccurs="1" type="ewp:Gender">
+                <xs:annotation>
+                    <xs:documentation>
+                        If this contact is a person, then this element MAY contain the gender of this
+                        person.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
             <xs:element ref="p:phone-number" minOccurs="0" maxOccurs="unbounded">
                 <xs:annotation>
                     <xs:documentation>
